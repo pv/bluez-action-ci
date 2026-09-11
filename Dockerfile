@@ -1,4 +1,4 @@
-FROM ghcr.io/pv/bluez-ci-image:latest
+FROM ghcr.io/bluez/ci-image:latest
 
 COPY *.sh           /
 COPY *.py           /
