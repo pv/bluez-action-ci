@@ -91,14 +91,14 @@ function check_github_token {
 function check_patchwork_token {
     if [ -z "$PATCHWORK_TOKEN" ]; then
         echo "Set PATCHWORK_TOKEN environment variable"
-        exit 1
+        #exit 1
     fi
 }
 
 function check_email_token {
     if [ -z "$EMAIL_TOKEN" ]; then
         echo "Set EMAIL_TOKEN environment variable"
-        exit 1
+        #exit 1
     fi
 }
 
