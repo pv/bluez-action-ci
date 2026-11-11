@@ -101,7 +101,7 @@ runs:
 
         docker run --rm \
           --device=/dev/kvm:/dev/kvm \
-          --security-opt apparmor=unconfined \
+          --security-opt seccomp=unconfined \
           --volume="${GITHUB_WORKSPACE}:${GITHUB_WORKSPACE}" \
           --workdir="${GITHUB_WORKSPACE}" \
           --env ACTION_TOKEN \
