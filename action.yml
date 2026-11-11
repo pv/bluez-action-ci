@@ -101,8 +101,6 @@ runs:
 
         docker run --rm \
           --device=/dev/kvm:/dev/kvm \
-          --security-opt seccomp=unconfined \
-          --security-opt apparmor=unconfined \
           --ulimit nofile=1048576 \
           --volume="${GITHUB_WORKSPACE}:${GITHUB_WORKSPACE}" \
           --workdir="${GITHUB_WORKSPACE}" \
