@@ -101,7 +101,7 @@ runs:
 
         docker run --rm \
           --device=/dev/kvm:/dev/kvm \
-          --ulimit nofile=1048576 \
+          --security-opt apparmor=unconfined \
           --volume="${GITHUB_WORKSPACE}:${GITHUB_WORKSPACE}" \
           --workdir="${GITHUB_WORKSPACE}" \
           --env ACTION_TOKEN \
